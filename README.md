@@ -10,7 +10,7 @@ The original class was touched just a little bit.
 
 ##Installation##
 
-Add this line to the composer.json require list
+Add this line to the composer.json require list and run composer update
 
 ```
 "bulforce/ext-direct": "dev-master"
@@ -37,7 +37,7 @@ You **MUST** edit the config.php file:
 return array(
     'namespace' => 'Ext.rpc',
     'descriptor' => 'Ext.rpc.REMOTING_API',
-    'timeout' => 600,
+    'timeout' => 30,
     'debug' => true,
     'api_classes' => array(
         'Items' => 'ItemsController'
@@ -49,7 +49,7 @@ Most important part is the **api_classes** array, there you have to list all the
 **Note** that it doesnt have to be associative array, you can simply list the class name in a normal indexed array. However if you list them as associative array then you can call them from extjs using the array element ``key`` instead of the actuall controller class name. This way you can hide your real application structure from the front end.
 
 **TAG Direct methods** 
-In orther for a controller method to be made available to extjs/sencha to call directly **two** conditions must be met:
+In order for a controller method to be made available to extjs/sencha to call directly **two** conditions must be met:
 
     1. Method needs to be declared as **public**
     2. Method needs to contain comment tag @direct
