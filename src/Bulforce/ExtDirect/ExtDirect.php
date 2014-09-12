@@ -14,6 +14,11 @@ class ExtDirect
     static public $api_classes = array();
 
     /**
+     * @var int Ajax timeout in seconds
+     */
+    static public $timeout = 30;
+
+    /**
      * @var array   Name of the methods to be flagged as "formHandler = true" (use "class::method" string format)
      */
     static public $form_handlers = array();
@@ -112,6 +117,7 @@ class ExtDirect
             'id'         => self::$id,
             'url'        => ( empty( self::$url ) ? $_SERVER['PHP_SELF'] : self::$url ),
             'type'       => 'remoting',
+            'timeout'    => self::$timeout,
             'namespace'  => self::$namespace,
             'descriptor' => self::$descriptor
         );
@@ -133,7 +139,7 @@ class ExtDirect
                 $direct = strpos($docComment, "@direct");
 
                 // Only public and @direct methods will be declared
-                if ( !$method->isPublic() || !$direct)
+                if ( !$method->isPublic() || !$direct )
                     continue;
 
                 // Don't declare constructor, destructor or abstract methods
@@ -679,5 +685,3 @@ class ExtDirectController
         echo $this->response->contents;
     }
 }
-
-?>
