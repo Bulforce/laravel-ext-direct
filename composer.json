@@ -10,7 +10,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "4.2-5.0"
+        "illuminate/support": "4.2.*"
     },
     "autoload": {
         "classmap": [
@@ -20,5 +20,5 @@
             "Bulforce\\ExtDirect\\": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
