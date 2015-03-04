@@ -1,7 +1,7 @@
 {
     "name": "bulforce/ext-direct",
     "description": "Laravel ExtJS/Sencha direct provider",
-    "keywords": ["extjs", "extdirect", "laravel4"],
+    "keywords": ["extjs", "extdirect", "laravel"],
     "authors": [
         {
             "name": "bulforce",
@@ -16,9 +16,8 @@
         "classmap": [
             "src/migrations"
         ],
-        "psr-0": {
-            "Bulforce\\ExtDirect\\": "src/"
+        "psr-4: {
+            "Bulforce\\ExtDirect\\": "src"
         }
-    },
-    "minimum-stability": "stable"
+    }
 }
