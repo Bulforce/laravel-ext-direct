@@ -16,7 +16,7 @@
         "classmap": [
             "src/migrations"
         ],
-        "psr-4: {
+        "psr-4": {
             "Bulforce\\ExtDirect\\": "src"
         }
     }
