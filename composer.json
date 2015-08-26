@@ -14,10 +14,12 @@
     },
     "autoload": {
         "classmap": [
-            "src/migrations"
+            "src/migrations",
+            "src/Bulforce/ExtDirect/Facades",
+            "src"
         ],
-        "psr-4": {
-            "Bulforce\\ExtDirect\\": "src"
+        "psr-0": {
+            "Bulforce\\ExtDirect\\": "src/Bulforce/ExtDirect/"
         }
     }
 }
