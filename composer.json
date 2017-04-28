@@ -1,7 +1,7 @@
 {
     "name": "bulforce/ext-direct",
     "description": "Laravel ExtJS/Sencha direct provider",
-    "keywords": ["extjs", "extdirect", "laravel4"],
+    "keywords": ["extjs", "extdirect", "laravel"],
     "authors": [
         {
             "name": "bulforce",
@@ -10,15 +10,16 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "4.2.*"
+        "illuminate/support": "~5.2"
     },
     "autoload": {
         "classmap": [
-            "src/migrations"
+            "src/migrations",
+            "src/Bulforce/ExtDirect/Facades",
+            "src"
         ],
         "psr-0": {
-            "Bulforce\\ExtDirect\\": "src/"
+            "Bulforce\\ExtDirect\\": "src/Bulforce/ExtDirect/"
         }
-    },
-    "minimum-stability": "stable"
+    }
 }

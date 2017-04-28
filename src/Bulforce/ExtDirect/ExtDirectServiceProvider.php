@@ -18,7 +18,7 @@ class ExtDirectServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('bulforce/ext-direct');
+
 	}
 
 	/**
