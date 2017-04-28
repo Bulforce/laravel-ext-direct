@@ -13,7 +13,7 @@ The original class was touched just a little bit.
 Add this line to the composer.json require list and run composer update
 
 ```
-"bulforce/ext-direct": "dev-master"
+"bulforce/ext-direct": "dev-laravel4"
 ```
 
 
