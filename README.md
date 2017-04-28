@@ -1,7 +1,7 @@
 ##Info
 This is ext-direct provider for laravel 5 and ExtJS 4 (works with extjs 5 as well)
 
-Looking for the laravel 4 package, check this laravel4 branch.
+Looking for the laravel 4 package, check the laravel4 branch.
 
 The idea behind ext-direct is to allow javascript to call remote php methods as they were client side javascript methods. This is reducing dramatically the development time.
 
